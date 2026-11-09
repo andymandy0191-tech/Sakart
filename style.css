@@ -95,3 +95,4 @@ button.demo-chip:hover{background:#dcebd1}
 .pd-buy{background:#fff;color:#111}.pd-buy:hover{background:#eef2ea}
 .form-grid textarea{width:100%;border:1px solid #dce5da;border-radius:12px;padding:12px 14px;font:inherit;font-size:13px;resize:vertical;outline:none}
 @media(max-width:850px){.pd-card{grid-template-columns:1fr;padding:28px 22px;border-radius:30px;gap:26px}.pd-image{max-width:320px;width:100%;margin:0 auto}}
+.compare-toggle, .compare-panel { display: none !important; }
