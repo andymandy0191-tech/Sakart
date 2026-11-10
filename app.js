@@ -283,7 +283,7 @@ function renderCart() {
   const fee = lines.length ? DELIVERY_FEE : 0;
   $("#cart-summary").innerHTML = `
     <div class="summary-line"><span>Subtotal</span><span>${peso(sub)}</span></div>
-    <div class="summary-line"><span>Demo delivery fee</span><span>${peso(fee)}</span></div>
+    <div class="summary-line"><span>Delivery fee</span><span>${peso(fee)}</span></div>
     <div class="summary-total"><span>Total</span><strong>${peso(sub + fee)}</strong></div>`;
   $("#checkout-form button[type=submit]").disabled = !lines.length;
 }
@@ -292,7 +292,7 @@ function renderCart() {
 function renderOrders() {
   const box = $("#orders-list");
   if (!state.orders.length) {
-    box.innerHTML = `<div class="empty-state"><span>📦</span><h3>No orders yet</h3><p>Orders you place in the demo checkout will show up here.</p><button class="btn btn-dark" type="button" data-go="marketplace">Start shopping</button></div>`;
+    box.innerHTML = `<div class="empty-state"><span>📦</span><h3>No orders yet</h3><p>Orders you place in checkout will show up here.</p><button class="btn btn-dark" type="button" data-go="marketplace">Start shopping</button></div>`;
     return;
   }
   box.innerHTML = state.orders.map((o) => `<article class="order-card">
